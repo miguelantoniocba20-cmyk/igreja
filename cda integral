@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Casa de Adolescentes - Brasília</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px;
+            animation: aparecer 1s ease-in;
+        }
+
+        .logo {
+            width: 140px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #000;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        .texto {
+            max-width: 600px;
+            margin: auto;
+            font-size: 18px;
+            padding: 20px;
+            animation: aparecer 2s ease-in;
+        }
+
+        .botao {
+            padding: 12px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #E1306C;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            transform: scale(1.1);
+            background-color: #c72c5c;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        @keyframes aparecer {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg" class="logo">
+    <h1>Casa de Adolescentes</h1>
+    <p>Brasília</p>
+</header>
+
+<div class="texto">
+    <p>
+        A Casa de Adolescentes é um lugar de transformação, onde adolescentes
+        têm a oportunidade de crescer, aprender e desfrutar mais da palavra do Senhor.
+    </p>
+
+    <button class="botao" onclick="abrirInstagram()">
+        Acessar Instagram 📱
+    </button>
+</div>
+
+<footer>
+    © 2026 Casa de Adolescentes - Brasília
+</footer>
+
+<script>
+    function abrirInstagram() {
+        window.open("https://www.instagram.com/casadeadolescentes.brasilia", "_blank");
+    }
+</script>
+
+</body>
+</html>
